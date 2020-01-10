@@ -53,7 +53,7 @@ fviz_cluster(kmeans.res)          # visualize clusters
 
 # PAM clustering
 set.seed(123)
-pam.res<-eclust(dataset, "pam", k = 5) 
+pam.res<-eclust(plant_dataset, "pam", k = 5) 
 head(pam.res$cluster, 15) 
 fviz_cluster(pam.res) # show clusters
 
